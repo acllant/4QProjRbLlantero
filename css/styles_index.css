@@ -1,0 +1,229 @@
+/* ============
+  global styles
+  ============= */
+
+body {
+  margin: 0;
+}
+
+h1, h3 {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ============
+  header and title
+  ============= */
+
+.logo {
+  width: 40px;
+  border-radius: 21px;
+  padding: 20px;
+}
+
+.header-title {
+  height: 500px;
+  background-image: url("../images/home-title-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.title {
+  margin: 0;
+}
+
+.title-text {
+  width: 60%;
+  height: 260px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: white;
+
+}
+
+.title h1 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 80px;
+  transform: translateY(0px);
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%{
+    transform: translateY(0px);
+  }
+
+  50%{
+    transform: translateY(-12px);
+  }
+
+  100%{
+    transform: translateY(0px);
+  }
+}
+
+.title p {
+  font-size: 20px;
+}
+
+/* ============
+  description
+  ============= */
+
+.description {
+  height: 400px;
+  background-image: url("../images/home-description-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.description-content {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  color: white;
+}
+
+.description h3 {
+  margin-top: -40px;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+/* ============
+  information section
+  ============= */
+
+section {
+  height: 900px;
+  background-image: url("../images/home-info-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.section-body {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
+  font-size: 35px;
+  color: #cc6965;
+}
+
+article {
+  margin: 80px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-text p {
+  margin: 5px 0;
+  font-weight: 400;
+  width: 400px;
+}
+
+/* ============
+  take me there button
+  ============= */
+
+.button {
+  display: flex;
+  justify-content: flex-end;
+  width: 28%;
+  height: 20px;
+  padding: 0;
+  margin-top: 12px;
+  background: white;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  box-shadow: 0 3px 2px rgb(0 0 0 / 0.2);
+
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.button-text, .button-icon {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 3px;
+  color: gray;
+  height: 100%;
+}
+
+.button:hover {
+  background: #e8c6c5;
+  position: relative;
+  top: 1px;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 0.2);
+}
+
+.image  {
+  width: 200px;
+  margin: 0 40px;
+  transform: translateY(0px);
+}
+
+/* ============
+  footer
+  ============= */
+
+footer {
+  height: 150px;
+  background: #0c1f2d;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+
+footer h3 {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.contact {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.contact p {
+  font-weight: 400;
+  font-size: 13px;
+}

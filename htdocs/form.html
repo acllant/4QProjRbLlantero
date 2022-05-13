@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Reservation Form</title>
+
+		<meta charset="UTF-8">
+		<meta name="author" content="Corinne Llantero">
+		<meta name="keywords" content="Beach Resort, Reservation Form">
+		<meta name="revised" content="13-05-2022">
+
+  	<link rel="stylesheet" href="../css/styles_form.css" type="text/css">
+		<link rel="stylesheet" href="../css/menu.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&family=Montserrat&display=swap" rel="stylesheet">
+		<link rel="icon" href="../images/icon.ico?v1" type="image/x-icon"/>
+	</head>
+
+  <body>
+		<div class="header-title">
+	    <header>
+	      <a href="../index.html"><img class="logo" src="../images/logo.png" alt="Website logo"></a>
+
+        <div class="nav-wrap">
+					<input type="checkbox" class="toggler">
+					<div class="hamburger"><div></div></div>
+					<nav>
+						<div>
+							<div>
+								<ul>
+									<li><a href="../index.html">Home</a></li>
+									<li><a href="rooms.html">Room Options</a></li>
+									<li><a href="form.html">Reservation Form</a></li>
+								</ul>
+							</div>
+						</div>
+					</nav>
+				</div>
+	    </header>
+
+	    <div class="title">
+	      <h1>Reservation Form</h1>
+	    </div>
+		</div>
+
+    <div class="intro">
+			<div class="intro-text">
+	      <p>Kindly fill up all the required information below.</p>
+			</div>
+		</div>
+
+		<section>
+      <article>
+	    <form id="formData" action="summary.html">
+        <div class="formSection">
+          <fieldset id="contact">
+            <legend>Contact info</legend>
+            <p>
+              <label>Full name<br/>
+              <select name="prefix" id="prefix">
+                <option value="" disabled selected>Prefix</option>
+                <option value="rev">Rev.</option>
+                <option value="ms">Ms.</option>
+                <option value="mr">Mr.</option>
+                <option value="mrs">Mrs.</option>
+                <option value="pr">Pr.</option>
+                <option value="dr">Dr.</option>
+                <option value="general">General</option>
+              </select>
+
+                <input type="text" name="fname" id="fname" placeholder="First Name" required/>
+                <input type="text" name="lname" id="lname" placeholder="Last Name" required/>
+              </label>
+            </p>
+
+            <p>
+          		<label>Phone number (ex: 1234 123 1234)<br/>
+          			<input id="tel" type="tel" name="phone_number" pattern="[0-9]{4} [0-9]{3} [0-9]{4}" required/>
+          		</label>
+          	</p>
+
+            <p>
+              <label>Email address<br/>
+                <input id="email" type="email" name="email_address" required/>
+              </label>
+            </p>
+
+            <p>
+              <label>Home address<br/>
+                  <input type="text" id="address" name="address" required/>
+              </label>
+            </p>
+          </fieldset>
+        </div>
+
+        <div class="formSection">
+          <fieldset id="stay">
+            <legend>Your stay</legend>
+            <p>
+              <label>Check-in<br/>
+                <input id="checkInTime" type="datetime-local" name="checkInTime" required />
+              </label>
+            </p>
+
+            <p>
+              <label>Check-out<br/>
+                <input id="checkOutTime" type="datetime-local" name="checkOutTime" required />
+              </label>
+            </p>
+
+            <p>
+              <label>Number of guests:
+                <input id="guests" type="number" name="guests" min="1" max="20" required/>
+              </label>
+            </p>
+
+            <fieldset id="typeOfRoom">
+              <legend>Room type</legend>
+              <p><label> <input type="checkbox" name="roomType" value="casita"/> Casita </label></p>
+              <p><label> <input type="checkbox" name="roomType" value="villa"/> Villa </label></p>
+            </fieldset>
+
+            <p>
+              <label>Casita option:
+                <input id="casita" type="text" name="casitaChoice" list="casitaOptions" />
+              </label>
+              <datalist id="casitaOptions">
+                  <option value="Beach pool">
+                  <option value="Beach">
+                  <option value="Treetop pool">
+                  <option value="Treetop">
+                  <option value="Deluxe hillside">
+                  <option value="Hillside">
+              </datalist>
+            </p>
+
+            <p>
+              <label>Villa option:
+                <input id="villa" type="text" name="villaChoice" list="villaOptions" />
+              </label>
+              <datalist id="villaOptions">
+                  <option value="One-bedroom">
+                  <option value="Two-bedroom">
+                  <option value="Three-bedroom">
+                  <option value="Four-bedroom">
+              </datalist>
+            </p>
+
+            <p>
+              <label>Additional details and requests<br/>
+                <textarea id="requests" name="requests" rows="5" cols="50"></textarea>
+              </label>
+            </p>
+          </fieldset>
+        </div>
+
+        <div class="formSection">
+          <fieldset>
+            <legend>Payment info</legend>
+            <p>
+              <label>Payment option<br/>
+              <select name="payment" id="payment" required>
+                <option value="cash">Cash</option>
+                <option value="credit">Credit card</option>
+                <option value="debit">Debit card</option>
+                <option value="bill">Direct billing</option>
+                <option value="check">Personal check</option>
+              </select>
+            </p>
+          </fieldset>
+        </div>
+
+        <p>
+          <input type="reset" id="btnReset" value="Clear information" />
+          <input type="submit" id="btnSubmit" disabled="true" value="Submit reservation" />
+        </p>
+        </form>
+      </article>
+  	</section>
+
+    <footer>
+      <h3>Contact us!</h3>
+      <div class="contact">
+				<p>4 Bicol Park, Legazpi, Albay, 1234</p>
+        <p>+63 995 850 3150</p>
+        <p>info@csbeachresort.com</p>
+      </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+	</body>
+</html>

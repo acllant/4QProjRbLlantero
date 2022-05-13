@@ -1,0 +1,181 @@
+/* ============
+  global styles
+  ============= */
+
+body {
+  margin: 0;
+}
+
+h1, h3, h4 {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+p, figcaption, legend {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ============
+  header and title
+  ============= */
+
+.header-title {
+  background-image: url("../images/form-title-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  height: 80px;
+}
+
+.logo {
+  width: 40px;
+  border-radius: 21px;
+  padding: 20px;
+}
+
+.title {
+  margin: 0;
+  height: 350px;
+}
+
+.title h1 {
+  height: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: white;
+  font-weight: 700;
+  font-size: 60px;
+  transform: translateY(0px);
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%{
+    transform: translateY(0px);
+  }
+
+  50%{
+    transform: translateY(-12px);
+  }
+
+  100%{
+    transform: translateY(0px);
+  }
+}
+
+/* ============
+  introduction
+  ============= */
+
+.intro {
+  height: 200px;
+  background-image: url("../images/form-intro-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro-text {
+  width: 70%;
+  height: 60%;
+  margin: auto;
+  padding-top: 20px;
+  text-align: center;
+  color: white;
+}
+
+/* ============
+  form section
+  ============= */
+
+section {
+  height: 1200px;
+  background-image: url("../images/form-info-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+}
+
+article {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.formSection {
+  padding: 20px 0;
+}
+
+section legend {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+#typeOfRoom legend {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#btnSubmit, #btnReset {
+  position: relative;
+  float: right;
+  margin: 0 5px 30px 5px;
+}
+
+/* ============
+  form validation styles
+  ============= */
+
+.valid{
+    border: normal;
+}
+
+.error{
+    border: 2px solid #c3271a;
+}
+
+/* ============
+  footer
+  ============= */
+
+footer {
+  height: 150px;
+  background: #0c1f2d;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+
+footer h3 {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.contact {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.contact p {
+  font-weight: 400;
+  font-size: 13px;
+}
